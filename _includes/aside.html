@@ -1,4 +1,10 @@
-  <div class="cover">
+ {% if page.bg %}
+  <aside class="sidebar" role="note" style="background-image: {{ site.images }}/rails.jpg">
+{% else %}
+  <aside class="sidebar" role="note" style="background-image: url({{ site.url }}{{ site.images }}/bg.svg)">
+{% endif %}
+
+<div class="cover">
 
     <div class="cover-text">
       <div class="heading">
